@@ -1,0 +1,19 @@
+name = "wiki-bash-scraper"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+# 要排除的代码前缀（逗号分隔）
+EXCLUDE_PREFIXES = "ssr://"
+
+# Wiki 页面配置（JSON 格式）
+WIKI_PAGES = '''
+[
+  {
+    "type": "gitlab",
+    "owner": "zhifan999",
+    "repo": "fq",
+    "pages": ["ss免费账号", "v2ray免费账号"]
+  }
+]
+'''
